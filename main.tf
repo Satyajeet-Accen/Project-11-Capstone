@@ -13,4 +13,9 @@ provider "aws" {
 
 resource "aws_s3_bucket" "satyajeet_infra_bucket" {
   bucket = "satyajeet-proj11-base-bucket"
+
+  tags = {
+    Environment = "Production"
+    Owner       = "Satyajeet"
+  }
 }
